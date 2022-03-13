@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_card"
+        android:layout_marginTop="@dimen/text_double_margin"
+        android:layout_marginEnd="@dimen/margin_card"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frame_subject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/subj_back">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/image_subject"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_margin="@dimen/text_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icons1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="@dimen/image_radius"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    app:riv_tile_mode="clamp" />
+
+                <ImageView
+                    android:id="@+id/image_openin_back"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/chevron_background"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent=".25" />
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="@dimen/text_size_subject"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/item_teacher"
+                    app:layout_constraintStart_toEndOf="@id/image_subject"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Literature" />
+
+                <TextView
+                    android:id="@+id/item_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="@string/teacher"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    app:layout_constraintStart_toEndOf="@id/image_subject"
+                    app:layout_constraintTop_toBottomOf="@+id/item_name"
+                    tools:text="Teacher: Mrs Smith" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/image_openin"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_margin="@dimen/text_margin"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="@dimen/image_radius"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    app:riv_tile_mode="clamp"
+                    tools:src="@drawable/skype">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

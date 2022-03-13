@@ -6,8 +6,8 @@
     android:name="ru.geekbrains.android2.classesapp.ClassesFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
+    android:layout_marginLeft="@dimen/text_double_margin"
+    android:layout_marginRight="@dimen/text_double_margin"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     tools:context=".ui.classes.ClassesFragment"
     tools:listitem="@layout/item_classes" />
