@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_exam_opt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elev">
+
+    <FrameLayout
+        android:id="@+id/frame_subject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/opt_subj_back">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/image_subject"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_margin="@dimen/text_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icons1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="@dimen/image_radius"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    app:riv_tile_mode="clamp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin_min"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textSize="@dimen/text_size_subject"
+                        android:textStyle="bold"
+                        tools:text="Literature" />
+
+                    <TextView
+                        android:id="@+id/item_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin_min"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textSize="@dimen/text_size_subject"
+                        tools:text="23/03/2022 10:30" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dhm_d0"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/material_on_primary_disabled"
+                    android:textSize="@dimen/text_size_subject"
+                    app:chipCornerRadius="@dimen/chip_radius"
+                    tools:text="0" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dhm_d1"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/material_on_primary_disabled"
+                    android:textSize="@dimen/text_size_subject"
+                    app:chipCornerRadius="@dimen/chip_radius"
+                    tools:text="9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dhm_div"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="@dimen/text_size_subject"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dhm_h3"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/material_on_primary_disabled"
+                    android:textSize="@dimen/text_size_subject"
+                    app:chipCornerRadius="@dimen/chip_radius"
+                    tools:text="2" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dhm_h4"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/material_on_primary_disabled"
+                    android:textSize="@dimen/text_size_subject"
+                    app:chipCornerRadius="@dimen/chip_radius"
+                    tools:text="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dhm_div"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="@dimen/text_size_subject"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dhm_m6"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/material_on_primary_disabled"
+                    android:textSize="@dimen/text_size_subject"
+                    app:chipCornerRadius="@dimen/chip_radius"
+                    tools:text="5" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dhm_m7"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/material_on_primary_disabled"
+                    android:textSize="@dimen/text_size_subject"
+                    app:chipCornerRadius="@dimen/chip_radius"
+                    tools:text="9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1"
+                    android:text="@string/days"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    tools:text="Days" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1"
+                    android:text="@string/hours"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    tools:text="Hours" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1"
+                    android:text="@string/minutes"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    tools:text="Minutes" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

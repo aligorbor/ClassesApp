@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">ClassesApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_classes">Classes</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">DyvQhXIpji0ISZvi6S1lkEukNBWfC0ToMDMSqcWt</string>
+    <string name="back4app_client_key">2n6DEc2KR8dZv6sFEPkK5r6NpTyOeDh8yoS42T8m</string>
+    <string name="title_home">School</string>
+    <string name="title_classes">Schedule</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_subjects">Subjects</string>
+    <string name="teacher">Teacher: %s</string>
+    <string name="interval">%s - %s</string>
+    <string name="days_left">%d days left</string>
+    <string name="reload">Reload list?</string>
+    <string name="homework">Homework</string>
+    <string name="classes">Classes</string>
+    <string name="exams">Are you ready for exams?</string>
+    <string name="days">Days</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="classes_today">%s classes today</string>
+    <string name="classes_tomorrow">%s classes tomorrow</string>
+    <string name="dhm_div">:</string>
 </resources>
